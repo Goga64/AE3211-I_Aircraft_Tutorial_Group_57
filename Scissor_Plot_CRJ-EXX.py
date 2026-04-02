@@ -15,8 +15,8 @@ grad_n = 0.425208
 int_n = -0.119705
 
 # Control at landing
-grad_c = -0.48682
-int_c = 0.226599
+grad_c = -0.60852
+int_c = 0.283249
 
 # CG Locations
 

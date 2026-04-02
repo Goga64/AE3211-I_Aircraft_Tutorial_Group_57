@@ -14,8 +14,8 @@ grad_n = 0.424126
 int_n = -0.099236
 
 # Control at landing
-grad_c = -0.40568
-int_c = 0.192231
+grad_c = -0.5071
+int_c = 0.240289
 
 
 # CG Locations
@@ -120,6 +120,17 @@ ShS_CRJ1000_line = np.ones_like(cg) * ShS_CRJ1000
 print(cg)
 
 plt.plot(cg, ShS_CRJ1000_line, linestyle = "--", linewidth = 2, color = "purple", label = "Sh/S of CRJ-1000")
+
+
+
+# x-intercepts
+x_int_stab = -int_s / grad_s
+x_int_neutral = -int_n / grad_n
+x_int_control = -int_c / grad_c
+
+plt.plot(x_int_stab, 0, 'o', color="#4C72B0", markeredgecolor="black")
+plt.plot(x_int_neutral, 0, 'o', color="#C44E52", markeredgecolor="black")
+plt.plot(x_int_control, 0, 'o', color="#55A868", markeredgecolor="black")
 
 
 
